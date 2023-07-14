@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Verdana, Tahoma, Calibri;
+    color: darkgreen;
+}
+
+.header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.header .nav-link {
+    color: lightgreen;
+}
+
+.header .nav-link:hover {
+    color: yellow;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
