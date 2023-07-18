@@ -19,7 +19,7 @@ public class CapacitacionServicio {
 
     return capDAO.obtenerCapacitaciones();
 }
-    public void create(CapacitacionDTO c) {
-     capDAO.crearCap(c);
+    public boolean create(CapacitacionDTO c) {
+     return capDAO.crearCapacitacion(c);
     }
 }

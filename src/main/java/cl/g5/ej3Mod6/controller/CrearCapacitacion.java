@@ -28,8 +28,11 @@ public class CrearCapacitacion {
 @PostMapping()
     public String nuevaCapacitacion(@ModelAttribute ("cap")CapacitacionDTO cap){
     logger.info(cap.toString());
-    capService.create(cap);
-    return "redirect:/capacitacion/lista";
+    boolean listo = capService.create(cap);
+    if (listo){
+        return "redirect: /lista";
+    }
+    return "index";
     //return "crearCapacitacion";
     }
 

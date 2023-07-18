@@ -31,11 +31,9 @@ public class CapacitacionDAOImpl implements CapacitacionDAO{
 
 
     @Override
-    public void crearCap(CapacitacionDTO c) {
-        //CapacitacionDTO cap= c;
-       // obtenerCapacitaciones().add(c);
-        System.out.println("Capacitacion creada"+c.toString());
-
+   public boolean crearCapacitacion(CapacitacionDTO c) {
+    return jdbcTemplate.update("insert into capacitacion (nombre, detalle, lugar, duracion, cantidad, cliente_id) values (?,?,?,?,?,?)",
+            c.getNombre(),c.getDetalle(),c.getLugar(),c.getDuracion(),c.getCantidad(),c.getCliente_id())>0;
     }
 
     @Override

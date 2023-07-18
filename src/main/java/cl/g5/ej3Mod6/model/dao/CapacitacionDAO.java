@@ -8,7 +8,7 @@ public interface CapacitacionDAO {
     //crud en interface
     CapacitacionDTO findbyId(int id);
     public List<CapacitacionDTO> obtenerCapacitaciones();
-    public void crearCap(CapacitacionDTO c);
+    boolean  crearCapacitacion(CapacitacionDTO c);
     boolean update(CapacitacionDTO c);
     boolean delete(CapacitacionDTO c);
 }

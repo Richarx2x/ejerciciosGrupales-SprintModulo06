@@ -9,6 +9,8 @@ public class CapacitacionDTO {
     private String lugar;
     private int duracion;
     private int cantidad;
+ private int cliente_id;
+
 
     public CapacitacionDTO() {
 
@@ -19,7 +21,7 @@ public class CapacitacionDTO {
         this.detalle = detalle;
     }
 
-    public CapacitacionDTO(String nombre, String detalle, String fecha, String hora, String lugar, int duracion, int cantidad) {
+    public CapacitacionDTO(String nombre, String detalle, String fecha, String hora, String lugar, int duracion, int cantidad, int cliente_id) {
         this.nombre = nombre;
         this.detalle = detalle;
         this.fecha = fecha;
@@ -27,6 +29,15 @@ public class CapacitacionDTO {
         this.lugar = lugar;
         this.duracion = duracion;
         this.cantidad = cantidad;
+        this.cliente_id =cliente_id;
+    }
+    public CapacitacionDTO(String nombre, String detalle, String lugar, int duracion, int cantidad, int cliente_id) {
+        this.nombre = nombre;
+        this.detalle = detalle;
+        this.lugar = lugar;
+        this.duracion = duracion;
+        this.cantidad = cantidad;
+        this.cliente_id =cliente_id;
     }
 
     public CapacitacionDTO(int id, String nombre, String detalle) {
@@ -97,6 +108,13 @@ public class CapacitacionDTO {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
+    }
+    public int getCliente_id() {
+        return cliente_id;
+    }
+
+    public void setCliente_id(int cliente_id) {
+        this.cliente_id = cliente_id;
     }
 
     @Override
