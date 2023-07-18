@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/capacitacion")
 public class CrearCapacitacion {
- private final CapacitacionServicio capService;
     Log logger = LogFactory.getLog(CrearCapacitacion.class);
+
+    private final CapacitacionServicio capService;
     public CrearCapacitacion(CapacitacionServicio capService) {
         this.capService = capService;
     }

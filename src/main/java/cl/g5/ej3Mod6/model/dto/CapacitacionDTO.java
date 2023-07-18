@@ -1,6 +1,7 @@
 package cl.g5.ej3Mod6.model.dto;
 
 public class CapacitacionDTO {
+    private int id;
     private String nombre;
     private String detalle;
     private String fecha;// use tipo string para este sprint ** cambiar tipo de dato en la BD
@@ -26,6 +27,20 @@ public class CapacitacionDTO {
         this.lugar = lugar;
         this.duracion = duracion;
         this.cantidad = cantidad;
+    }
+
+    public CapacitacionDTO(int id, String nombre, String detalle) {
+        this.id=id;
+        this.nombre = nombre;
+        this.detalle = detalle;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
