@@ -83,4 +83,12 @@ public class CapacitacionDTO {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "CapacitacionDTO{" +
+                "nombre='" + nombre + '\'' +
+                ", detalle='" + detalle + '\'' +
+                '}';
+    }
 }

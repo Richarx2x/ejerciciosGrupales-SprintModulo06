@@ -14,59 +14,66 @@
     <a href="/capacitacion/lista">Lista de Capacitaciones</a>
     <h1>Crear Capacitación</h1>
 
-    <form action="" method="post" class="form align-self-center">
+    <form action="/capacitacion" method="post" modelAttribute="cap" class="form align-self-center">
 
         <div class="mb-3 row">
              <label class="col-sm-2 col-form-label" for="identificador">Identificador:</label>
             <div class="col-sm-4">
-                <input type="number" id="identificador" name="identificador" class="form-control" required>
+                <input type="hidden" id="identificador" name="identificador" value="0" class="form-control" >
             </div>
         </div>
         <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label" for="rutCliente">RUT Cliente:</label>
+            <label class="col-sm-2 col-form-label" for="nombre">Nombre Capacitación:</label>
             <div class="col-sm-4">
-            <input class="form-control" type="number" id="rutCliente" name="rutCliente" required>
+            <input class="form-control" type="text" id="nombre" name="nombre" required>
             </div>
         </div>
         <div class="mb-3 row">
-             <label class="col-sm-2 col-form-label" for="dia">Día:</label>
+            <label class="col-sm-2 col-form-label" for="detalle">Detalle:</label>
             <div class="col-sm-4">
-                <input class="form-control" type="date" id="dia" name="dia" required>
+                <input class="form-control" type="text" id="detalle" name="detalle" required>
             </div>
         </div>
-        <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label" for="hora">Hora:</label>
-            <div class="col-sm-4">
-                <input class="form-control" type="text" id="hora" name="hora" required>
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label" for="lugar">Lugar:</label>
-            <div class="col-sm-4">
-                 <input class="form-control" type="text" id="lugar" name="lugar" required>
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label" for="duracion">Duración:</label>
-            <div class="col-sm-4">
-                 <input  class="form-control" type="text" id="duracion" name="duracion" required>
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label  class="col-sm-2 col-form-label"for="cantidadAsistentes">Cantidad de Asistentes:</label>
-            <div class="col-sm-4">
-                <input  class="form-control" type="number" id="cantidadAsistentes" name="cantidadAsistentes" required>
-            </div>
-        </div>
+        <--! comentado de de atributos -->
+        <!--/*<div class="mb-3 row">
+           <label class="col-sm-2 col-form-label" for="dia">Día:</label>
+          <div class="col-sm-4">
+              <input class="form-control" type="date" id="dia" name="dia" required>
+          </div>
+      </div>
+      <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="hora">Hora:</label>
+          <div class="col-sm-4">
+              <input class="form-control" type="text" id="hora" name="hora" required>
+          </div>
+      </div>
+      <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="lugar">Lugar:</label>
+          <div class="col-sm-4">
+               <input class="form-control" type="text" id="lugar" name="lugar" required>
+          </div>
+      </div>
+      <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="duracion">Duración:</label>
+          <div class="col-sm-4">
+               <input  class="form-control" type="text" id="duracion" name="duracion" required>
+          </div>
+      </div>
+      <div class="mb-3 row">
+          <label  class="col-sm-2 col-form-label"for="cantidadAsistentes">Cantidad de Asistentes:</label>
+          <div class="col-sm-4">
+              <input  class="form-control" type="number" id="cantidadAsistentes" name="cantidadAsistentes" required>
+          </div>
+      </div>*/-->
 
-            <div class="col-sm-4 align-self-rigth">
-                <button type="submit" class="btn btn-primary">Registrar</button>
-            </div>
-    </form>
+          <div class="col-sm-4 align-self-rigth">
+              <button type="submit" class="btn btn-primary">Crear Capacitación</button>
+          </div>
+  </form>
 </div>
 <footer class="container mt-2 mb-3">
 <div>
-    <p> INFORMACIÓN DE FOOTER CON THYMELEAF</p>
+  <p> INFORMACIÓN DE FOOTER CON THYMELEAF</p>
 </div>
 
 </footer>

@@ -1,9 +1,17 @@
+Ejercicio Grupal 4.1 - módulo 06.
 
-### Ejercicio Grupal 04 - Módulo 06
-
-Integrantes:
-- Simon Zelada
+Integrantes: 
 - Ricardo Cea
 - Aracily Morales
-- Mauricio Morales
 - Eduardo Torres
+- Simon Zelada
+- Mauricio Morales
+
+--------------------------------
+
+Notas: 
+
+- Las imágenes e información del proceso desarrollado se encuentran dentro de la carpeta
+"word", dentro de este directorio.
+
+- Se adjunta archivo .pdf, con las instrucciones del ejercicio grupal 4.1
