@@ -19,8 +19,8 @@ public class CapacitationController {
     @GetMapping
     public String findAll(Model model){
 
-        model.addAttribute(service.findAll());
-        return "CapacitationList";
+        model.addAttribute("capacitation", service.findAll());
+        return "listadocapacitaciones";
 
     }
 
