@@ -20,14 +20,14 @@ public class CapacitationEntity {
     private int id;
     // @Column(name="nombre") -> agregar en caso de nombre distinto
     private String nombre;
-    private String detalle;
+    // private String detalle;
     private Date fecha;
     private String hora;
     private String lugar;
-    private Double duracion;
-    private int cantidad;
-    @Column(name="cliente_id")
-    private int clienteId;
+    // private Double duracion;
+    // private int cantidad;
+    // @Column(name="cliente_id")
+    // private int clienteId;
 /*    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id", insertable = false, updatable = false)
     private ClienteDTO cliente;*/

@@ -128,5 +128,6 @@ CREATE TABLE asistente (
 -- DROP DATABASE prevencion;
 
 describe capacitacion;
+select * from capacitacion;
 
 

@@ -15,4 +15,15 @@ public class CapacitationDTO {
     private Date capacitationDate;
     private String hour;
     private String place;
+
+    @Override
+    public String toString() {
+        return "CapacitationDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", capacitationDate=" + capacitationDate +
+                ", hour='" + hour + '\'' +
+                ", place='" + place + '\'' +
+                '}';
+    }
 }

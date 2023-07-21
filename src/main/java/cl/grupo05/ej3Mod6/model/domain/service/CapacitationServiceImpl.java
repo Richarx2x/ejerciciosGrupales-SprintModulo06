@@ -24,6 +24,14 @@ public class CapacitationServiceImpl implements CapacitationService {
         return mapper.toCapacitationsDTO(repository.findAll());
     }
 
+/*    @Override
+    public List<CapacitationDTO> findAll(){
+        List<CapacitationDTO> capacitaciones = mapper.toCapacitationsDTO(repository.findAll());
+        System.out.println(capacitaciones);
+        return capacitaciones;
+    }*/
+
+
     @Override
     public CapacitationDTO findById(int id) {
         return null;
