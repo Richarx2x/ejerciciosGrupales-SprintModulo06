@@ -25,9 +25,9 @@ public class TrainingServiceImpl implements TrainingService {
 
 
     @Override
-    public Optional<List<Training>> findAll() {
+    public List<Training> findAll() {
 
-        return Optional.of(mapper.toTrainings(repository.findAll()));
+        return mapper.toTrainings(repository.findAll());
     }
 
     @Override

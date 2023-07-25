@@ -24,12 +24,13 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Optional<Customer> findById(int id) {
-        return repository.findById(id).map(mapper::toCustomer);
+    public Customer findById(int id) {
+       // return repository.findById(id).map(mapper::toCustomer);
+        return mapper.toCustomer(repository.findById(id)).;
     }
 
     @Override
-    public Optional<List<Customer>> findAll() {
-        return Optional.of(mapper.toCustomers(repository.findAll()));
+    public List<Customer> findAll() {
+        return mapper.toCustomers(repository.findAll());
     }
 }
