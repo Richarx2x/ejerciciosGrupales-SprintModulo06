@@ -1,7 +1,9 @@
 package ejercicios.model.persistence.mapper;
 
-import cl.modulo6.ejercicios.model.domain.dto.Training;
-import cl.modulo6.ejercicios.model.persistence.entity.Capacitacion;
+/*import cl.modulo6.ejercicios.model.domain.dto.Training;
+import cl.modulo6.ejercicios.model.persistence.entity.Capacitacion;*/
+import ejercicios.model.domain.dto.Training;
+import ejercicios.model.persistence.entity.Capacitacion;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

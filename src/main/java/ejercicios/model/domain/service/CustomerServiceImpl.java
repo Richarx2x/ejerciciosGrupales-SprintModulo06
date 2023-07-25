@@ -1,9 +1,13 @@
 package ejercicios.model.domain.service;
 
-import cl.modulo6.ejercicios.model.domain.dto.Customer;
+/*import cl.modulo6.ejercicios.model.domain.dto.Customer;
 import cl.modulo6.ejercicios.model.persistence.mapper.CustomerMapper;
 import cl.modulo6.ejercicios.model.persistence.repository.CustomerRepository;
-import cl.modulo6.ejercicios.web.service.CustomerService;
+import cl.modulo6.ejercicios.web.service.CustomerService;*/
+import ejercicios.model.domain.dto.Customer;
+import ejercicios.model.persistence.mapper.CustomerMapper;
+import ejercicios.model.persistence.repository.CustomerRepository;
+import ejercicios.web.service.CustomerService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

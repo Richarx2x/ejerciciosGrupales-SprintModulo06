@@ -1,6 +1,8 @@
 package ejercicios.model.persistence.repository;
 
-import cl.modulo6.ejercicios.model.persistence.entity.Capacitacion;
+/*import cl.modulo6.ejercicios.model.persistence.entity.Capacitacion;
+import org.springframework.data.jpa.repository.JpaRepository;*/
+import ejercicios.model.persistence.entity.Capacitacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

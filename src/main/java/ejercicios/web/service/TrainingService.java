@@ -1,6 +1,8 @@
 package ejercicios.web.service;
 
-import cl.modulo6.ejercicios.model.domain.dto.Training;
+//import cl.modulo6.ejercicios.model.domain.dto.Training;
+
+import ejercicios.model.domain.dto.Training;
 
 import java.util.List;
 import java.util.Optional;

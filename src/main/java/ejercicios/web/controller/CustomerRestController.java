@@ -1,7 +1,9 @@
 package ejercicios.web.controller;
 
-import cl.modulo6.ejercicios.model.domain.dto.Customer;
-import cl.modulo6.ejercicios.web.service.CustomerService;
+/*import cl.modulo6.ejercicios.model.domain.dto.Customer;
+import cl.modulo6.ejercicios.web.service.CustomerService;*/
+import ejercicios.model.domain.dto.Customer;
+import ejercicios.web.service.CustomerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

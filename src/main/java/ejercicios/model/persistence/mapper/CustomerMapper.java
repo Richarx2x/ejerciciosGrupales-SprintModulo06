@@ -1,7 +1,9 @@
 package ejercicios.model.persistence.mapper;
 
-import cl.modulo6.ejercicios.model.domain.dto.Customer;
-import cl.modulo6.ejercicios.model.persistence.entity.Cliente;
+/*import cl.modulo6.ejercicios.model.domain.dto.Customer;
+import cl.modulo6.ejercicios.model.persistence.entity.Cliente;*/
+import ejercicios.model.domain.dto.Customer;
+import ejercicios.model.persistence.entity.Cliente;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -25,7 +27,7 @@ public interface CustomerMapper {
            @Mapping(source="edad",target="age"),
            @Mapping(source="usuario",target="user")
    })
-    Customer toCustomer(Cliente cliente);
+   Customer toCustomer(Cliente cliente);
     List<Customer> toCustomers (List<Cliente> clientes);
     @InheritInverseConfiguration
     Cliente toCliente (Customer customer);

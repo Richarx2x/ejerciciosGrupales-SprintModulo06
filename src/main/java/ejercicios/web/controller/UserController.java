@@ -1,6 +1,7 @@
 package ejercicios.web.controller;
 
-import cl.modulo6.ejercicios.web.service.UserService;
+//import cl.modulo6.ejercicios.web.service.UserService;
+import ejercicios.web.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
