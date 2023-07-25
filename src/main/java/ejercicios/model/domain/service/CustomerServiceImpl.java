@@ -26,7 +26,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer findById(int id) {
        // return repository.findById(id).map(mapper::toCustomer);
-        return mapper.toCustomer(repository.findById(id)).;
+        return mapper.toCustomer(repository.findById(id));
     }
 
     @Override
