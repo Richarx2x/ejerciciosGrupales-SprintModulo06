@@ -10,19 +10,24 @@
     <div th:replace="header :: head"></div>
     <div class="container">
         <h1>USUARIOS</h1>
-        <table class="table table-bordered dataTable" id="tablaUsuarios">
-            <thead class="table-dark">
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Nombre Usuario</th>
-            <tbody>
-            <tr th:each="list: ${listUsers}">
-                <td th:text="${list.getId()}"></td>
-                <td th:text="${list.getName()}" ></td>
-                <td th:text="${list.getUsername()}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <div th:if="${listUsers.isPresent()}">
+            <table class="table table-bordered dataTable" id="tablaUsuarios">
+                <thead class="table-dark">
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Nombre Usuario</th>
+                <tbody>
+                <tr th:each="list: ${listUsers.get()}">
+                    <td th:text="${list.getId()}"></td>
+                    <td th:text="${list.getName()}" ></td>
+                    <td th:text="${list.getUsername()}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:unless="${listUsers.isPresent()}">
+            <p id="notFound">No shay registro de usuarios</p>
+        </div>
     </div>
     <div th:replace="footer :: foot"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

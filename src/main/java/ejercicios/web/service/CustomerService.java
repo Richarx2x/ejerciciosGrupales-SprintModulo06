@@ -4,10 +4,11 @@ package ejercicios.web.service;
 
 import ejercicios.model.domain.dto.Customer;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
 public interface CustomerService {
-    public Customer findById(int id);
-    public List<Customer> findAll();
+    public Optional<Customer> findById(int id);
+    public Optional<List<Customer>> findAll();
 }

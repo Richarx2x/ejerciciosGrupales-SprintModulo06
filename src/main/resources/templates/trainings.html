@@ -4,31 +4,44 @@
     <meta charset="UTF-8"content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- ruta a archivo css-->
-    <title>Title</title>
+    <title>Lista Capacitaciones</title>
 </head>
 <body>
 <div th:replace="header :: head"></div>
 <div class="container">
-  <h1>USUARIOS</h1>
-  <table class="table table-bordered dataTable" id="tablaCapacitaciones">
-    <thead class="table-dark">
-    <th>ID</th>
-    <th>Nombre</th>
-    <th>Fecha</th>
-    <th>Hora</th>
-    <th>Lugar</th>
-    <th>Cliente</th>
-    <tbody>
-    <tr th:each="list: ${listTrainings}">
-      <td th:text="${list.getId()}"></td>
-      <td th:text="${list.getName()}" ></td>
-      <td th:text="${list.getDate()}"></td>
-      <td th:text="${list.getHour()}"></td>
-      <td th:text="${list.getPlace()}"></td>
-      <td th:text="${list.getCustomer().getName()}"></td>
-    </tr>
-    </tbody>
-  </table>
+  <h1>CAPACITACIONES</h1>
+  <div th:if="${listTrainings.isPresent()}">
+    <table class="table table-bordered dataTable" id="tablaCapacitaciones">
+      <thead class="table-dark">
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Lugar</th>
+      <th>Cliente</th>
+      <tbody>
+      <tr th:each="list: ${listTrainings.get()}">
+        <td th:text="${list.getId()}"></td>
+        <td th:text="${list.getName()}" ></td>
+        <td th:text="${list.getDate()}"></td>
+        <td th:text="${list.getHour()}"></td>
+        <td th:text="${list.getPlace()}"></td>
+
+        <td >
+          <ul th:each="cust : ${list.getCustomer()}">
+            <li th:text="${cust.getName()}"></li>
+          </ul>
+        </td>
+        <!-- <td th:text="${list.getCustomer().getName()}"></td>-->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div th:unless="${listTrainings.isPresent()}">
+    <p>No se encontraron capacitaciones</p>
+  </div>
+
+</div>
 </div>
 <div th:replace="footer :: foot"></div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
