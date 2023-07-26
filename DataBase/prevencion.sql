@@ -127,7 +127,9 @@ CREATE TABLE asistente (
 
 -- DROP DATABASE prevencion;
 
-describe capacitacion;
+describe profesional;
+describe administrativo;
+describe cliente;
 select * from capacitacion;
 
 
