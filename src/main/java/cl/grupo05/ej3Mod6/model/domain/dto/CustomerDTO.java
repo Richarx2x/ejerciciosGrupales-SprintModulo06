@@ -1,15 +1,13 @@
 package cl.grupo05.ej3Mod6.model.domain.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class CustomerDTO {
     private int id;
     private String rut;
@@ -18,19 +16,6 @@ public class CustomerDTO {
     private String email;
     private String phone;
     private int age;
-    private int userId;
+    // private int userId;
 
-    @Override
-    public String toString() {
-        return "CustomerDTO{" +
-                "id=" + id +
-                ", rut='" + rut + '\'' +
-                ", name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", age=" + age +
-                ", userId=" + userId +
-                '}';
-    }
 }

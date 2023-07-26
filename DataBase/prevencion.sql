@@ -130,6 +130,7 @@ CREATE TABLE asistente (
 describe profesional;
 describe administrativo;
 describe cliente;
+describe usuario;
 select * from capacitacion;
 
 

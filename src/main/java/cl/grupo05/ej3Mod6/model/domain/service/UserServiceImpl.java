@@ -1,6 +1,7 @@
 package cl.grupo05.ej3Mod6.model.domain.service;
 
 
+import cl.grupo05.ej3Mod6.web.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
