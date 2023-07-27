@@ -24,9 +24,8 @@ public class CustomerEntity {
     private String telefono;
     private int edad;
     @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "usuario_id", insertable = false, updatable = false)
     private UserEntity userEntity;
-/*    @Column(name = "usuario_id")
-    private int userId;*/
 
 
 }

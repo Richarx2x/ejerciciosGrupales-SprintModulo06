@@ -131,6 +131,7 @@ describe profesional;
 describe administrativo;
 describe cliente;
 describe usuario;
+describe capacitacion;
 select * from capacitacion;
 
 

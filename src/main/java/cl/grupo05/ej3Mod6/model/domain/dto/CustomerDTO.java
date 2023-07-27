@@ -16,6 +16,7 @@ public class CustomerDTO {
     private String email;
     private String phone;
     private int age;
+    private UserDTO userDTO;
     // private int userId;
 
 }

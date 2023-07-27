@@ -14,6 +14,7 @@ public class ProfessionalDTO {
     private String lastname;
     private String email;
     private String phone;
+    private UserDTO userDTO;
     // private String userId;
 
 }

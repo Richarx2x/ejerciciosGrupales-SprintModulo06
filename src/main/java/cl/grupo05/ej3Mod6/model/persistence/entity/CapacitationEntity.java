@@ -18,9 +18,7 @@ public class CapacitationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    // @Column(name="nombre") -> agregar en caso de nombre distinto
     private String nombre;
-    // private String detalle;
     private Date fecha;
     private String hora;
     private String lugar;

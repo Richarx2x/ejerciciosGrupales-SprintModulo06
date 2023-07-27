@@ -12,6 +12,7 @@ public class AdministrativeDTO {
     private String run;
     private String name;
     private String lastname;
+    private UserDTO userDTO;
     // private int userId;
 
 }
